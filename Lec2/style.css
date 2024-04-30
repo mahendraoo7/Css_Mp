@@ -1,0 +1,73 @@
+h1 {
+    /* color: green; */
+}
+
+h4 {
+    background-color: brown;
+}
+
+/* when apply multiple property then css apply last style, means ovvride (top to bottom approch apply) */
+p {
+    color: yellow;
+    background-color: black;
+}
+
+p {
+    color: red;
+    background-color: aqua;
+}
+
+/* diff between body and universal selector */
+* {
+    /* color: white; */
+}
+
+body {
+    /* color:darkgoldenrod */
+}
+
+/* id used # */
+/* exa: */
+/* h1{
+    39
+    color: red;
+    40
+    } */
+#game{
+    color: red;
+}
+
+#freefire{
+    color: blue;
+}
+
+/* class selector */
+.cod{
+    color: yellow;
+    background-color: black;
+}
+
+.pubg {
+    /* color: pink;
+    
+    background-color: blue; */
+    border: 5px solid red;
+}
+
+/* grouping selector */
+
+/* .box1{
+     background-color: darkblue
+     }
+    
+     p{
+     background-color: darkblue;
+     }
+    
+     h5{
+     background-color: darkblue;
+     } */
+
+.box2,p,h5 {
+    background-color: yellowgreen;
+}
