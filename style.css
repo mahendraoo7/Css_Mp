@@ -1,0 +1,50 @@
+/* Import value  */
+
+@import "importstyle.css";
+@import url("style2.css");
+
+/* CASCADE */
+
+h1 {
+    color : darkblue;
+}
+h1{
+    color: darkgoldenrod;
+}
+
+/* SPECIFICITY  */
+
+h4{
+    color: yellowgreen;
+}
+
+#lamp {
+    color: blue;
+}
+
+.stemp {
+    color: brown;
+}
+
+/*  INHERITANCE */
+
+.parent {
+    color : red;
+}
+
+/* CHILD  */
+
+p{
+    color: blue;
+}
+
+/* INHERIT MEANS PARENTS STYLE TAKE */
+
+P{
+    color: inherit;
+}
+
+/* INITIAL MEANS DEFULT BROWSER STYLE TAKE */
+P{
+    color: initial;
+}
