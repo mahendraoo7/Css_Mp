@@ -1,0 +1,57 @@
+              /* Color */
+.color {
+    color: rgb(161, 114, 114);   /* Using rgb value*/
+
+    color :red ; /* Using color Name*/
+
+    color: #ff0000; /* Using hexsdecimal color  */
+}
+
+
+             /* BackgroundColor */
+.bgcolor {
+         background-color: gray;
+}
+
+
+            /* Border */
+
+.border {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}       
+
+            /* Border */
+            
+.Border {
+    background-color: black;
+    border-width: 10px;
+    border-style: double;
+    border-color: #ff0000;
+ }               
+
+             /* Multiple Border  Apply*/
+.multi{
+    border-top: 2px solid red;
+    border-right: 5px dashed blue;
+    border-bottom: 7px dotted green;
+    border-left: 10px double yellow;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+
+             /* Border radius*/
+
+.radius {
+    color : white;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border : 2px solid blue;
+    border-radius: 20px;
+    display: flex;  
+    align-items: center;
+}
