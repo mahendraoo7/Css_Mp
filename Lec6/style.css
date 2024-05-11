@@ -3,9 +3,9 @@
     display: grid;
     display: none;
     .box{
-        height: 100px;
-        width: 100px;
-        border: 1px solid orangered;
+        height: 175px;
+        width: 175px;
+        border: 1px solid black;
         background-color: gray;
         display: inline-block;
         display: inline-flex;
@@ -14,59 +14,61 @@
     }
 } */
 
-.parent {
+.div {
     display: flex;
     width: 1300px;
     height: 500px;
     border: 1px solid black;
 
     .box-1{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
+        
     }
     .box-2{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
     }
     .box-3{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
     }
     .box-4{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
     }
     .box-5{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
     }
     .box-6{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
     }
     .box-7{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
     }
     .box-8{
-        border: 1px solid orangered;
-        background-color: gray;
-        flex-basis: 150px;
-        flex-shrink: 1;
+        border: 1px solid black;
+        background-color:aqua;
+        flex-basis: 175px;
+        flex-shrink: 2;
+        flex-grow: 1;
     }
 
 }
