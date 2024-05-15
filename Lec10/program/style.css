@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 5px;
+}
+
+.itm1{
+    background-color: #fecccb;
+    grid-column: 1/4;
+    text-align: center;
+}
+.itm2{
+    background-color: #fecccb;
+    grid-row: 2/4;
+
+}
+.itm3{
+    background-color: #fecccb;
+    grid-column: 2/4;
+}
+.itm4{
+    background-color: #fecccb;
+}
+.itm5{
+    background-color: #b3ffff;
+}
+.itm6{
+    grid-column: 1/4;
+    background-color: #d9b3ff;
+}
