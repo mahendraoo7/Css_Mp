@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
+h1{
+  font-family: "Kanit", sans-serif;
+
 }
