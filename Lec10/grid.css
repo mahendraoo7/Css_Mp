@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-align: center;
+    
 }
 .container{
 
@@ -10,6 +12,7 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: 200px 200px 200px 200px ;
     gap: 10px;
+    /* display: flex; */
 }
 
 
