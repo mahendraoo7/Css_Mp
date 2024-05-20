@@ -1,0 +1,48 @@
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.TransX {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    
+}
+
+.path:hover .TransX {
+    /* width: 500px;
+    height: 500px; */
+    transform: translateX(900px);
+    transition-duration: 3s ;
+}
+
+
+.TransY {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    
+}
+
+.path:hover .TransY {
+    /* width: 500px;
+    height: 500px; */
+    transform: translatey(900px);
+    transition-duration: 3s ;
+}
+
+
+.TransXY {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    
+}
+
+.path:hover .TransXY {
+    /* width: 500px;
+    height: 500px; */
+    transform: translate(400px,900px);
+    transition-duration: 3s ;
+}
