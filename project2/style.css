@@ -48,7 +48,6 @@
 
 .main-font{font-family: 'Roboto', sans-serif;}
 .alt-font{font-family: 'Montserrat', sans-serif;}
-.preloader
 
 
 /* ===================================
@@ -2861,8 +2860,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
     z-index: 800;
     text-align: center;
     overflow: hidden;
-    /* transition-duration: 2s; */
-    transition: 1s;
 }
 
 .box{
@@ -2871,7 +2868,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
     left: 50%;
     transform: translate(-50%,-50%);
     display: inline-block;
-    transition: 1s;
 }
 
 .box:after {
@@ -2886,7 +2882,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
     top: 0;
     left: 0;
     border-radius: 3px;
-    transition: 1s;
 }
 .box:before {
     content: '';
@@ -2901,7 +2896,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
     top: 59px;
     left: 0;
     border-radius: 50%;
-    transition: 1s;
 }
 
 @-moz-keyframes preloader {
@@ -2925,7 +2919,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
         -moz-transform: translateY(0) rotate(90deg);
         transform: translateY(0) rotate(90deg);
     }
-    
 }
 @-webkit-keyframes preloader {
     17% {
@@ -2947,7 +2940,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
     100% {
         -webkit-transform: translateY(0) rotate(90deg);
         transform: translateY(0) rotate(90deg);
-        transition: 1s;
     }
 }
 @keyframes preloader {
@@ -2959,7 +2951,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
         -ms-transform: translateY(9px) rotate(22.5deg);
         -webkit-transform: translateY(9px) rotate(22.5deg);
         transform: translateY(9px) rotate(22.5deg);
-        transition: 1s;
     }
     50% {
         -moz-transform: scale(1, 0.9) translateY(18px) rotate(45deg);
@@ -2967,7 +2958,6 @@ input.inputerror, textarea.inputerror, select.inputerror {
         -webkit-transform: scale(1, 0.9) translateY(18px) rotate(45deg);
         transform: scale(1, 0.9) translateY(18px) rotate(45deg);
         border-bottom-right-radius: 40px;
-
     }
     75% {
         -moz-transform: translateY(9px) rotate(67.5deg);
