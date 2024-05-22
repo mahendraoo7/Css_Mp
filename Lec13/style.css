@@ -2,7 +2,6 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .TransX {
     height: 100px;
     width: 100px;
@@ -43,6 +42,121 @@ h2 {
 .path:hover .TransXY {
     /* width: 500px;
     height: 500px; */
-    transform: translate(400px,900px);
+    transform: translate(500px,200px);
     transition-duration: 3s ;
 }
+
+.the {
+    text-align: center;
+    border: 3px solid black;
+    /* display: inline ; */
+}
+
+.ROTATEx{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+.path:hover .ROTATEx {
+    transform: rotatex(89deg);
+    transition: 1s;
+}
+
+.ROTATEy {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+
+}
+
+.path:hover .ROTATEy {
+    transform: rotatey(89deg);
+    transition: 1s;
+}
+
+.ROTATExy {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+
+}
+
+.path:hover .ROTATExy {
+    transform: rotate(189deg);
+    transition: 3s;
+}
+.ROTATE-xy {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+
+}
+
+.path:hover .ROTATE-xy {
+    transform: rotate(-189deg);
+    transition: 3s;
+}
+
+.SCALEx {
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+
+}
+
+.path:hover .SCALEx {
+    transform : scalex(10) ;
+    transition: 2s;
+}
+
+
+.SCALEy {
+    height: 100px;
+    width: 100px;
+    background-color:lightseagreen;
+
+}
+
+.path:hover .SCALEy {
+    transform : scale(2) ;
+    transition: 2s;
+}
+
+.SCALExy {
+    height: 200px;
+    width: 200px;
+
+
+}
+
+.path:hover .SCALExy {
+    transform : scale(3) ;
+    transition: 2s;
+}
+
+
+.SKEWx {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+}
+
+.path:hover .SKEWx {
+    transform : skewx(45deg) ;
+    transition: 2s;
+}
+
+.SKEWy {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+}
+
+.path:hover .SKEWy{
+    transform : skewy(50deg) ;
+    transition: 2s;
+}
+
