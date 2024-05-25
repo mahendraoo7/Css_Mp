@@ -34,7 +34,7 @@ i{
    
 }
 
-.box1{
+.section1{
     background-color: rgb(118, 200, 200);
     background-image: linear-gradient(to bottom right, blue, pink);
     width: 100%;
@@ -43,7 +43,7 @@ i{
     display: flex;
     /* overflow: hidden; */
 }
-.box2{
+.section2{
     background-color: white;
     width: 100%;
     height: 700px;
@@ -62,13 +62,13 @@ i{
     }
 } */
 
-.box2-1{
+.image2{
     animation-duration: 2s;
     animation-name: slide1;
     animation-fill-mode: forwards;
 }  
 
-.box2-2{
+.image1{
     animation-duration: 2s;
     animation-name: slide2;
     animation-fill-mode: forwards;
@@ -97,11 +97,11 @@ i{
     justify-content: end;
     width: 100%;
     height: 100px;
-    background-color:color(from color srgb r g b);
+    background-color:blue;
     align-items: center;
-    margin-top: 20px;
-    position: fixed;
-    z-index: 2;
+    /* margin-top: px; */
+    position: fixed ;
+    z-index: 7;
 }
 .ul{
     display: flex;
@@ -150,7 +150,7 @@ i{
     font-size: 40px;
     margin-right: 150px;
 }
-.box1-1{
+.src{
     width: 500px;
     height: 500px;
     border-radius: 80px;
@@ -158,7 +158,7 @@ i{
     margin-left: -60px;
     margin-top: -90px;
     /* position: absolute; */
-    /* z-index: 1; */
+    z-index: 1;
     background-color: rgb(9, 180, 247);
 }
 .box1-3{
@@ -177,7 +177,7 @@ i{
     transform: scale(0.8);
     transition: 2s;
 }
-.box1-2{
+.box{
     width: 600px;
     height: 400px;
     background-color:color(from color srgb r g b);
@@ -218,7 +218,7 @@ i{
     width: 200px;
     background-color: rgb(9, 180, 247);
 }
-.box17{
+.image3{
     width: 200px;
     height: 500px;
     margin-top: 300px;
@@ -278,7 +278,7 @@ i{
    background-color: skyblue;
     transition-duration: 1s;
 }
-.box3{
+.work{
     width: 100%;
     height: 300px;
     background-color: white;
@@ -286,27 +286,27 @@ i{
     justify-content:center;
     margin-left: -70px;
 }
-.box3-1{
+.work2{
     height: 100%;
     width: 300px;
     background-color:white;
     margin-right: 15px;
 }
-.box3-2{
+.work3{
     height: 100%;
     width: 300px;
     background-color: white;
     margin-right: 15px;
 
 }
-.box3-3{
+.world{
     height: 100%;
     width: 300px;
     background-color: white;
     margin-right: 15px;
 
 }
-.box3-4{
+.word2{
     height: 100%;
     width: 300px;
     background-color:white;

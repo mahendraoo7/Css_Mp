@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.display {
+    display: flex;
+    border: 2px dotted black;
+    width: 31%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.hello {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+}
+.hello2 {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+    position: static;
+}
+.hello3 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+}
+.hello4 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+
+.Rel {
+    display: flex;
+    border: 2px dotted black;
+    width: 31%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.rel1 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+}
+.rel2 {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+    position: relative;
+    top : 23px;
+    left: 23px;
+    z-index: 2;
+}
+.rel3 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+}
+.rel4 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+
+.Aeb {
+    display: flex;
+    border: 2px dotted black;
+    width: 23%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.aeb1 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+    /* position: absolute; */
+}
+.aeb2 {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+    position: absolute;
+    top : 630px;
+    left: 50px;
+    z-index: 2;
+}
+.aeb3 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin-right: 2px;
+    /* position: absolute; */
+}
+.aeb4 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    /* position: absolute; */
+}
