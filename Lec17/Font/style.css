@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.conatainer {
+    border : 5px solid black
+}
+
+.main img{
+   /* float : right ; */
+   float:left;
+}
+
+.main2 {
+    color: red;
+}
+
+.main3 {
+    color: blue;
+    clear : left ;
+    clear:both;
+}

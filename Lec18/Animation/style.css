@@ -1,0 +1,31 @@
+.main {
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:springgreen;
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes circle {
+    from {
+        top: 0px;
+        left: 0px;
+        color: red;
+        background-color: aqua;
+    }
+    to {
+        top: 0px;
+        left: 200px;
+        border-radius: 100%;
+        color: aqua;
+        background-color: red;
+    
+     }
+}

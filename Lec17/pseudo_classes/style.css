@@ -1,0 +1,77 @@
+*{
+    margin : 0px ;
+    box-sizing: border-box;
+}
+
+a:link {
+    color:cadetblue;
+    background-color: black;
+}
+a:hover {
+    color: red;
+    background-color: blue;
+}
+
+a:visited {
+    color:blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a:active {
+    color: blueviolet;
+}
+
+:root {
+    /* color: gray; */
+}
+
+p:first-child {
+    color: brown;
+}
+
+p:last-child {
+    color: violet;
+}
+
+p:nth-child(4) {
+    color: yellow;
+}
+
+p:nth-child(2n+1) {
+    color: red;
+}
+
+p:nth-child(odd) {
+    color: turquoise;
+}
+
+p:nth-child(even) {
+    color: springgreen;
+}
+
+/* Pseudo element */
+
+/* apply when i select any portion */
+
+::selection {
+    color: black;
+    background-color: lightblue;
+}
+
+p::first-line {
+    color: silver;
+}
+
+p::first-letter {
+    color: sienna;
+}
+
+h1::before {
+    color: red;
+    content: "**";
+}
+
+h1::after {
+    color : blue ;
+    content: "***";
+}
