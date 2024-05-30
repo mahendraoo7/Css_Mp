@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contant {
+    display: flex;
+       background-image: url(Assets/6114100.jpg);
+       background-size: cover;
+       height: 500px;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+}
+
+.One {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+
+}
+.Two {
+    background-color:sienna;
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+
+
+}
+.Three {
+    background-color:violet;
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+
+
+}
+.Four {
+    background-color:aqua;
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+
+
+}
+
+@media only screen and (max-width: 770px) {
+
+     .contant {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        
+     }
+
+}
+
+@media only screen and (max-width: 320px) {
+       
+    .contant {
+        display: grid;       
+        grid-template-columns: auto; 
+     }
+}
