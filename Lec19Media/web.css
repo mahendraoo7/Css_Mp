@@ -10,7 +10,7 @@
        height: 500px;
        align-items: center;
        justify-content: center;
-       gap: 10px;
+       gap: 90px;
 }
 
 .One {
@@ -32,8 +32,7 @@
     background-color:violet;
     height: 100px;
     width: 100px;
-    border: 2px solid red;
-
+    border: 2px solid red ;
 
 }
 .Four {
@@ -45,13 +44,13 @@
 
 }
 
+
 @media only screen and (max-width: 770px) {
 
      .contant {
         display: grid;
         grid-template-columns: auto auto;
-
-        
+        gap: 90px;
      }
 
 }
