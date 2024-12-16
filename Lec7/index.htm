@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,5 +24,73 @@
         </nav>
 
     </header>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aadhaar Card Demo</title>
+	<style>
+		.aadhaar-card {
+			width: 350px;
+			height: 220px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin: 40px auto;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.aadhaar-card header {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+		.aadhaar-card header h2 {
+			margin: 0;
+		}
+		.aadhaar-card .details {
+			padding: 20px;
+		}
+		.aadhaar-card .details dl {
+			margin: 0;
+		}
+		.aadhaar-card .details dt {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.aadhaar-card .details dd {
+			margin-bottom: 20px;
+		}
+		.aadhaar-card .qr-code {
+			width: 100px;
+			height: 100px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin: 20px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="aadhaar-card">
+		<header>
+			<h2>Aadhaar Card</h2>
+		</header>
+		<div class="details">
+			<dl>
+				<dt>Name:</dt>
+				<dd>John Doe</dd>
+				<dt>Aadhaar Number:</dt>
+				<dd>1234 5678 9012</dd>
+				<dt>Date of Birth:</dt>
+				<dd>01-01-1990</dd>
+				<dt>Address:</dt>
+				<dd>123, Main Street, Anytown, India</dd>
+			</dl>
+		</div>
+		<div class="qr-code">
+			<!-- QR Code Image will be displayed here -->
+		</div>
+	</div>
 </body>
 </html>

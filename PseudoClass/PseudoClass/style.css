@@ -1,0 +1,100 @@
+/* h1:first-child{
+    background-color: red;
+} */
+
+/* h1:last-child{
+    background-color: red;
+} */
+
+/* h1:first-of-type{
+    background-color: red;
+} */
+
+/* h1:last-of-type{
+    background-color: red;
+} */
+
+/* h1:nth-child(5){
+    background-color: red;
+} */
+
+/* h1:nth-last-child(7){
+    background-color: red;
+} */
+
+/* h1:nth-of-type(6){
+    background-color: red;
+} */
+
+/* h1:nth-last-of-type(4){
+    background-color: red;
+} */
+
+/* h1:only-of-type{
+    background-color: red;
+} */
+
+/* h1:only-child{
+    background-color: red;
+} */
+
+/* :where(pre , .demo){
+    background-color: green;
+} */
+
+body > header > p:first-child {
+    color: red; }
+
+
+body > header > p:nth-child(10) {
+    color: blue;  
+}
+
+
+body > header > h1:nth-child(5) {
+    color: green;  
+}
+
+
+body > header > div > h1:nth-child(5) {
+    color: purple;  
+}
+
+
+body > header > p:nth-child(10) {
+    color: orange;  
+}
+
+
+body > header > section > h1:nth-child(1) {
+    color: yellow;  
+}
+
+
+body > header > div > section > div > h1:nth-child(4) {
+    color: brown;  
+}
+
+
+body > header > div > p:nth-child(5) {
+    color: cyan;  
+}
+
+
+body > header > h1:nth-child(20) {
+    color: pink; 
+}
+
+
+body > header > section > h1:nth-child(5) {
+    color: teal;  
+}
+
+
+body > header > div > div > h1:nth-child(5) {
+    color: magenta;  
+}
+
+pre {
+    color: lime;  
+}
