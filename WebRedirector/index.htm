@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .redirect-container {
+            max-width: 600px;
+            padding: 20px;
+            background: linear-gradient(120deg ,red ,blue ,green , yellow);
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .continue-button {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #4facfe;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .continue-button:hover {
+            background-color: #3a9ce5;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .countdown {
+                font-size: 1.2rem;
+            }
+
+            .continue-button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-container">
+        <h1>Redirecting Soon...</h1>
+        <p>You will be redirected in <span class="countdown">20</span> seconds.</p>
+        <a href="https://example.com" class="continue-button">Continue</a>
+    </div>
+
+    <script>
+        let countdown = 20;
+        const countdownElement = document.querySelector('.countdown');
+        const continueButton = document.querySelector('.continue-button');
+
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+
+            if (countdown === 0) {
+                clearInterval(timer);
+                countdownElement.textContent = '0';
+                continueButton.style.display = 'inline-block';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
