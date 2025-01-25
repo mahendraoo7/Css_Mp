@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,101 +10,371 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
+            background-color: white;
+        }
+
+        .main {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background: white;
-            color: #ffffff;
+            height: 80vh;
+            /* Use viewport height */
             text-align: center;
+            padding: 5vw;
+            /* Add some padding for responsiveness */
         }
 
         .redirect-container {
-            max-width: 600px;
-            padding: 20px;
-            background: linear-gradient(120deg ,red ,blue ,green , yellow);
+            max-width: 100%;
+            /* Ensure container doesn't exceed screen width */
+            padding: 5%;
+            /* Adjust padding based on screen size */
             border-radius: 10px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-top: 5%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        p {
+        h4 {
             font-size: 1rem;
-            margin-bottom: 20px;
+            margin-bottom: 2vh;
+            /* Adjust margin in vh */
+            font-weight: 400;
         }
 
-        .countdown {
-            font-size: 1.5rem;
+        .circles-wrapper {
+            position: relative;
+            width: 50vw;
+            /* Use viewport width */
+            height: 50vw;
+            /* Maintain aspect ratio */
+            max-width: 220px;
+            /* Cap the max size */
+            max-height: 220px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle-timer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            border-radius: 50%;
+            border-style: solid;
+            animation: spin 4s linear infinite;
+        }
+
+        .circle-timer.red {
+            width: 40vw;
+            /* Use relative size */
+            height: 40vw;
+            max-width: 200px;
+            max-height: 200px;
+            border-width: 3px;
+            border-color: red transparent transparent transparent;
+        }
+
+        .circle-timer.blue {
+            width: 36vw;
+            height: 36vw;
+            max-width: 180px;
+            max-height: 180px;
+            border-width: 3px;
+            border-color: blue transparent transparent transparent;
+            animation-duration: 3s;
+        }
+
+        .circle-timer.green {
+            width: 32vw;
+            height: 32vw;
+            max-width: 160px;
+            max-height: 160px;
+            border-width: 3px;
+            border-color: green transparent transparent transparent;
+            animation-duration: 2s;
+        }
+
+        .circle-timer.yellow {
+            width: 28vw;
+            height: 28vw;
+            max-width: 140px;
+            max-height: 140px;
+            border-width: 3px;
+            border-color: yellow transparent transparent transparent;
+            animation-duration: 5s;
+        }
+
+        .circle-timer.purple {
+            width: 24vw;
+            height: 24vw;
+            max-width: 120px;
+            max-height: 120px;
+            border-width: 3px;
+            border-color: purple transparent transparent transparent;
+            animation-duration: 6s;
+        }
+
+        .circle-timer.orange {
+            width: 20vw;
+            height: 20vw;
+            max-width: 100px;
+            max-height: 100px;
+            border-width: 3px;
+            border-color: orange transparent transparent transparent;
+            animation-duration: 7s;
+        }
+
+        @keyframes spin {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .circle-text {
+            position: absolute;
+            font-size: 2rem;
             font-weight: bold;
         }
 
-        .continue-button {
-            display: none;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #ffffff;
-            background-color: #4facfe;
+        .hrline {
+
+            color: #2d8cf0;
+            margin: 5vh 0;
+            /* Adjust margin with vh */
+            width: 100lvh;
+        }
+
+        .jn {
+            
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            height: 12vh;
+            width: 40%;
+            padding-right: 5vw;
+            /* Add padding */
+        }
+
+        .s1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 22px;
+        }
+
+        .btn {
+            position: relative;
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #2d8cf0;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            text-transform: uppercase;
             cursor: pointer;
-            text-decoration: none;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .continue-button:hover {
-            background-color: #3a9ce5;
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+            animation: slide-light 2s linear infinite;
         }
 
+        @keyframes slide-light {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        .btn {
+            padding: 17px 40px;
+            background: #2d8cf0;
+            color: white;
+            font-weight: bolder;
+            border: none;
+            font-size: 17px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+
+        /* Animation */
+
+
+        .swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 0.6s ease-out both;
+	        animation: swirl-in-fwd 0.6s ease-out both;
+}
+
+
+  
+        @-webkit-keyframes swirl-in-fwd {
+            0% {
+                -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes swirl-in-fwd {
+            0% {
+                -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+                opacity: 1;
+            }
+        }
+
+
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5rem;
+            .circles-wrapper {
+                width: 40vw;
+                height: 40vw;
             }
 
-            p {
-                font-size: 0.9rem;
+            .circle-timer {
+                width: 35vw;
+                height: 35vw;
             }
 
-            .countdown {
-                font-size: 1.2rem;
+            .btn {
+                padding: 12px 30px;
+                font-size: 15px;
             }
 
-            .continue-button {
-                font-size: 0.9rem;
-                padding: 8px 16px;
+            .jn {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .circles-wrapper {
+                width: 50vw;
+                height: 50vw;
+            }
+
+            .circle-timer {
+                width: 40vw;
+                height: 40vw;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+
+            .jn {
+                font-size: 16px;
             }
         }
     </style>
 </head>
+
 <body>
-    <div class="redirect-container">
-        <h1>Redirecting Soon...</h1>
-        <p>You will be redirected in <span class="countdown">20</span> seconds.</p>
-        <a href="https://example.com" class="continue-button">Continue</a>
+    <div class="jn">
+       <h1 class="s1 swirl-in-fwd">
+            Jn Drive
+       </h1>
+    </div>
+    <div class="main">
+        <div class="redirect-container">
+
+            <hr class="hrline">
+
+            <h4 id="message-text">Please Click On The Continue Button To Verify Yourself.</h4>
+            <div id="content" class="hidden">
+                <div class="circles-wrapper">
+                    <div class="circle-timer red"></div>
+                    <div class="circle-timer blue"></div>
+                    <div class="circle-timer green"></div>
+                    <div class="circle-timer yellow"></div>
+                    <div class="circle-timer purple"></div>
+                    <div class="circle-timer orange"></div>
+                    <span id="circle-timer" class="circle-text">20</span>
+                </div>
+            </div>
+            <button id="start-btn" class="btn">Click Here</button>
+            <button id="continue-btn" class="btn hidden">CONTINUE</button>
+
+            <hr class="hrline">
+
+        </div>
     </div>
 
     <script>
         let countdown = 20;
-        const countdownElement = document.querySelector('.countdown');
-        const continueButton = document.querySelector('.continue-button');
+        const countdownElement = document.getElementById('circle-timer');
+        const startBtn = document.getElementById('start-btn');
+        const content = document.getElementById('content');
+        const continueBtn = document.getElementById('continue-btn');
+        const messageText = document.getElementById('message-text');
 
-        const timer = setInterval(() => {
-            countdown--;
-            countdownElement.textContent = countdown;
+        startBtn.addEventListener('click', () => {
+            startBtn.textContent = 'PLEASE WAIT...';  // Change button text
+            startBtn.disabled = true;  // Disable the button to prevent further clicks
+            messageText.textContent = 'Link Is Almost Ready';  // Change h4 text
+            content.classList.remove('hidden');
 
-            if (countdown === 0) {
-                clearInterval(timer);
-                countdownElement.textContent = '0';
-                continueButton.style.display = 'inline-block';
-            }
-        }, 1000);
+            const timer = setInterval(() => {
+                countdown--;
+                countdownElement.textContent = countdown;
+                if (countdown === 0) {
+                    clearInterval(timer);
+                    countdownElement.textContent = '0';
+                    continueBtn.classList.remove('hidden');  // Show continue button after countdown finishes
+                    continueBtn.style.display = 'inline-block';  // Ensure button is displayed correctly
+                    startBtn.style.display = 'none';  // Hide the start button
+                }
+            }, 1000);
+        });
+
+        continueBtn.addEventListener('click', () => {
+            window.location.href = 'https://neodrive.icu';
+        });
     </script>
 </body>
+
 </html>
